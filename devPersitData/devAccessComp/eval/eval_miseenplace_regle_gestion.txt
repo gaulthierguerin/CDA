@@ -1,0 +1,11 @@
+-- Pour tenir compte des coûts liés au transport, on vérifiera que pour chaque produit 
+-- d’une commande, le client réside dans le même pays que le fournisseur du même produit
+
+
+-- Nous pourrions vérifier cela grâce à un déclencheur AFTER INSERT sur la table `orders`,
+-- qui viendra comparer le pays du fournisseur et celui du client, et qui majorera le prix de
+-- 5% si ceux-ci sont différents. 
+-- Il serait même possible d'automatiser le calcul de la majoration si l'on implémentait 
+-- un outil permettant de calculer la distance d'un pays à l'autre permettant ainsi de
+-- majorer le coût de livraison par tranche de 1000 km.
+

@@ -1,0 +1,4 @@
+Un client peut passer 0 ou plusieurs commandes
+Une commande ne peut être passée que par un et un seul client
+On récupère le N° Client dans la table commande en tant que clé étrangère pour pouvoir lié une commande à un client
+Une commande se compose des clés primaires/étrangères N° Commande et N° Articles, récupérées sur les tables commande et article
